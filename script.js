@@ -20,3 +20,10 @@ document.addEventListener("DOMContentLoaded", function() {
         openPopup(); // Open the same popup when the "Contact" link is clicked
     });
 });
+
+// JavaScript code to control the video loop (optional)
+document.addEventListener("DOMContentLoaded", function() {
+    var video = document.querySelector(".video-bg");
+    video.play(); // Start playing the video
+    video.loop = true; // Set the video to loop continuously
+});
