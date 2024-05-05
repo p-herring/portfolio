@@ -8,8 +8,15 @@ function closePopup() {
 
 document.addEventListener("DOMContentLoaded", function() {
     var aboutMeLink = document.querySelector(".about-me");
+    var contactLink = document.querySelector(".contact-link");
+
     aboutMeLink.addEventListener("click", function(event) {
         event.preventDefault(); // Prevent default link behavior
-        openPopup(); // Open the popup when the link is clicked
+        openPopup(); // Open the popup when the "About Me" link is clicked
+    });
+
+    contactLink.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        openPopup(); // Open the same popup when the "Contact" link is clicked
     });
 });
