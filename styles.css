@@ -1,7 +1,7 @@
-/* styles.css */
 html {
     background-color: rgba(0, 0, 0, 0.965);
 }
+
 body {
     font-family: Arial, sans-serif;
     color: white;
@@ -18,11 +18,11 @@ header {
 }
 
 .header-bg {
-    position: relative; /* Set position to relative to contain the video */
-    overflow: hidden; /* Hide overflow content */
-    color: #fff; /* Text color for better visibility against the video */
-    padding: 20px; /* Add padding for better spacing */
-    text-align: center; /* Center-align text */
+    position: relative; 
+    overflow: hidden; 
+    color: #fff; 
+    padding: 20px; 
+    text-align: center; 
 }
 
 .header-bg::before {
@@ -32,8 +32,8 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay to improve text readability */
-    z-index: -1; /* Place the overlay behind the content */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1; 
 }
 
 .video-bg {
@@ -42,8 +42,8 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Cover the entire header with the video */
-    z-index: -2; /* Place the video behind the overlay */
+    object-fit: cover; 
+    z-index: -2; 
 }
 
 .contact-link {
@@ -56,19 +56,19 @@ header {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    display: flex; /* Use flexbox layout */
-    flex-wrap: wrap; /* Allow projects to wrap to the next row */
-    justify-content: space-between; /* Distribute projects evenly */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
 }
 
 .project {
-    width: calc(50% - 10px); /* Set width to 50% of container width with margin */
-    min-width: 300px; /* Set minimum width for project boxes */
-    max-width: 400px; /* Set maximum width for project boxes */
-    height: 200px; /* Set fixed height for project boxes */
+    width: calc(50% - 10px); 
+    min-width: 300px; 
+    max-width: 400px; 
+    height: 200px; 
     box-sizing: border-box;
-    position: relative; /* Add position relative for absolute positioning */
-    overflow: hidden; /* Hide overflow content */
+    position: relative; 
+    overflow: hidden; 
     margin-bottom: 20px;
     color: #fff;
     text-decoration: none;
@@ -77,18 +77,18 @@ header {
 .project::before {
     content: '';
     position: absolute;
-    top: -10px; /* Adjust top position to add padding */
-    left: -10px; /* Adjust left position to add padding */
-    width: calc(100% + 20px); /* Add padding to the width */
-    height: calc(100% + 20px); /* Add padding to the height */
+    top: -10px; 
+    left: -10px; 
+    width: calc(100% + 20px); 
+    height: calc(100% + 20px); 
     background-color: #00ff48b9;
     z-index: -1;
-    transition: transform 0.5s ease; /* Transition the transform property */
-    transform: scale(0); /* Initially scale down to hide */
+    transition: transform 0.5s ease; 
+    transform: scale(0); 
 }
 
 .project:hover::before {
-    transform: scale(1); /* Scale up on hover to show the fill effect with padding */
+    transform: scale(1); 
 }
 
 .project h2 {
@@ -139,4 +139,160 @@ header {
     right: 10px;
     cursor: pointer;
     font-size: 20px;
+}
+
+.footer-text {
+    text-align: center;
+    font-family: inherit; 
+    color: inherit; 
+    padding: 20px 0;
+}/* styles.css */
+html {
+    background-color: rgba(0, 0, 0, 0.965);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header {
+    
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-bg {
+    position: relative; 
+    overflow: hidden; 
+    color: #fff; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+.header-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1; 
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -2; 
+}
+
+.contact-link {
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.project {
+    width: calc(50% - 10px); 
+    min-width: 300px; 
+    max-width: 400px; 
+    height: 200px; 
+    box-sizing: border-box;
+    position: relative; 
+    overflow: hidden; 
+    margin-bottom: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.project::before {
+    content: '';
+    position: absolute;
+    top: -10px; 
+    left: -10px; 
+    width: calc(100% + 20px); 
+    height: calc(100% + 20px); 
+    background-color: #00ff48b9;
+    z-index: -1;
+    transition: transform 0.5s ease; 
+    transform: scale(0); 
+}
+
+.project:hover::before {
+    transform: scale(1); 
+}
+
+.project h2 {
+    margin-top: 0;
+}
+
+.project-link {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.project-link:hover {
+    text-decoration: none;
+}
+
+.project-link::after {
+    content: " →";
+    display: inline-block;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.footer-text {
+    text-align: center;
+    font-family: inherit; 
+    color: inherit; 
+    padding: 20px 0;
 }
